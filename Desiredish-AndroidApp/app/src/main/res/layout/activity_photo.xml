@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/username_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RadioGroup
+                android:id="@+id/myRadioGroup"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:checkedButton="@+id/restaurant"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant"
+                    android:id="@+id/restaurantradio"
+                    android:layout_weight="1"
+                    android:textSize="22dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home-Made"
+                    android:id="@+id/homemade"
+                    android:layout_weight="1"
+                    android:textSize="22dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date"
+                android:id="@+id/textView2"
+                android:textSize="22dp"
+                android:textColor="#3f3f3f"
+                android:layout_marginLeft="10dp"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="11/11/2014"
+                    android:id="@+id/Time"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+                <ImageButton
+                    android:id="@+id/change_date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_action_edit"
+                    />
+                <!--Button android:text="Change Date"
+                    android:id="@+id/change_date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:background="#A4C639"
+                    android:textColor="#ffffffff"
+                    android:layout_marginRight="10dp"/-->
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating:"
+                android:id="@+id/textView4"
+                android:textSize="22dp"
+                android:textColor="#3f3f3f"
+                android:layout_marginLeft="10dp"
+                />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+            />
+
+            <TextView
+                android:id="@+id/RestaurantName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurant"
+                android:textSize="22dp"
+                android:textColor="#3f3f3f"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext"
+                android:textSize="25dp">
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="22dp"
+                android:textColor="#3f3f3f"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext"
+                android:textSize="25dp" />
+
+
+
+            <ImageButton
+                android:id="@+id/btnIntend"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_action_camera"
+            />
+
+            <ImageView
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/imageView1"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+             />
+
+            <Button
+                android:text="Upload Record"
+                android:id="@+id/submit"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:background="#A4C639"
+                android:textColor="#ffffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
